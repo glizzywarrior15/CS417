@@ -8,7 +8,7 @@ public class Quit : MonoBehaviour
     void Start()
     {
         action.action.Enable();
-        action.action.performed += ctx =>
+        action.action.performed += (ctx) =>
         {
             #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
